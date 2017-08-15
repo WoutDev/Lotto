@@ -1,0 +1,18 @@
+name: Lotto
+version: 1.0-SNAPSHOT
+main: be.woutdev.lotto.Lotto
+author: Wout Ceulemans
+website: www.woutdev.be
+commands:
+  bet:
+    description: Bet for an open Lotto game
+    aliases: [betlotto, lottobet]
+  startlotto:
+    description: Start a new Lotto game
+    aliases: [lottostart]
+  pot:
+    description: Check the current Lotto's total pot
+    aliases: [lottopot, potlotto, checkpot]
+  endlotto:
+    description: Prematurely end the lotto
+    aliases: [cancellotto, stoplotto]
