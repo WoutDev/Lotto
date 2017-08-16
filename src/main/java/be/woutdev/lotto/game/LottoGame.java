@@ -62,12 +62,12 @@ public class LottoGame implements Runnable
 
     public boolean isParticipant(UUID uuid)
     {
-        return getParticipants().stream().anyMatch(p -> p.getParticipant() == uuid);
+        return getParticipants().stream().anyMatch(p -> p.getParticipant().equals(uuid));
     }
 
     public LottoParticipant getParticipant(UUID uuid)
     {
-        return getParticipants().stream().filter(p -> p.getParticipant() == uuid).findFirst().orElse(null);
+        return getParticipants().stream().filter(p -> p.getParticipant().equals(uuid)).findFirst().orElse(null);
     }
 
     public void start()
